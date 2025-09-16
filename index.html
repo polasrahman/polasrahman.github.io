@@ -1,20 +1,92 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title></title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Polas Rahman</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f6f8fb;--card:#ffffff;--muted:#6b7280;--accent:#0ea5a4}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;background:var(--bg);margin:0;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px}
+    .card{background:var(--card);max-width:900px;width:100%;border-radius:14px;box-shadow:0 6px 30px rgba(16,24,40,0.08);padding:28px;display:grid;grid-template-columns:220px 1fr;gap:24px}
+    .avatar{width:200px;height:200px;border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#eef2ff,#fff);border:1px solid rgba(15,23,42,0.04)}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    h1{margin:0;font-size:22px}
+    h2{margin:6px 0 12px;font-size:14px;color:var(--muted);font-weight:600}
+    p.lead{margin:0 0 12px;color:#111827;line-height:1.5}
+    .meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .badge{background:#f1f5f9;padding:6px 10px;border-radius:999px;font-size:13px;color:#0f172a}
+    .section{margin-top:18px}
+    ul.skills{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+    ul.skills li{background:#f8fafc;padding:8px 10px;border-radius:8px;font-size:13px;color:var(--muted)}
+    .contact{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+    a.primary{background:var(--accent);color:white}
+    a.ghost{border:1px solid #e6eef0;color:#0f172a;background:white}
+    footer{grid-column:1/-1;margin-top:18px;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:720px){
+      .card{grid-template-columns:1fr;padding:18px}
+      .avatar{width:140px;height:140px;margin:0 auto}
+      .meta{justify-content:center}
+      footer{text-align:center}
+    }
+  </style>
 </head>
 <body>
-<style type="text/css">
-.mydiv p {
-  color: #01a4e0;
-  margin: 10px;
-}
-</style>
-	<div class="mydiv" style="color: red;font-size: 54px;margin: 0 auto;padding: 0 70px;text-align: center;">
-		<p>Contact me</p>
-		<p>Website: <a href="https://polasrahman.com">polasrahman.com</a></p>
-		<p>email: polasrahman@gmail.com</p>
-	</div>
+  <main class="card" role="main">
+    <div>
+      <div class="avatar">
+        <!-- Replace with your photo -->
+        <img src="https://via.placeholder.com/400x400.png?text=Your+Photo" alt="Polas Rahman">
+      </div>
+      <div class="meta">
+        <span class="badge">Full‑Stack Developer</span>
+        <span class="badge">WordPress &amp; PHP</span>
+        <span class="badge">Remote</span>
+      </div>
+    </div>
+
+    <div>
+      <h1>Polas Rahman</h1>
+      <h2>Full‑Stack Developer — WordPress • PHP • JavaScript</h2>
+
+      <p class="lead">
+        Hi, I’m Polas — a detail‑focused full‑stack developer with 10+ years building websites, plugins, and tooling for remote clients. I love crafting performant websites, automating workflows, and solving tricky WordPress problems.
+      </p>
+
+      <div class="section">
+        <strong>About (বাংলায়):</strong>
+        <p style="margin:6px 0 0;color:#374151;line-height:1.45">আমি ওয়ার্ডপ্রেস ও ফুল‑স্ট্যাক ডেভেলপার। ১০+ বছরের অভিজ্ঞতায় ওয়েবসাইট, প্লাগইন এবং কাস্টম সলিউশন তৈরিতে কাজ করি। ইউনিক, ক্লিন এবং রেস্পন্সিভ ডিজাইন পছন্দ করি।</p>
+      </div>
+
+      <div class="section">
+        <strong>Skills</strong>
+        <ul class="skills">
+          <li>PHP</li>
+          <li>WordPress</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>MySQL</li>
+          <li>WooCommerce</li>
+          <li>HTML &amp; CSS</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <strong>Contact</strong>
+        <div class="contact">
+          <a class="btn primary" href="mailto:polas@example.com">Email: polas@example.com</a>
+          <a class="btn ghost" href="#">Download Resume</a>
+        </div>
+      </div>
+
+      <footer>
+        Quick links: <a href="#">Portfolio</a> • <a href="#">GitHub</a> • <a href="#">LinkedIn</a>
+      </footer>
+    </div>
+  </main>
 </body>
 </html>
